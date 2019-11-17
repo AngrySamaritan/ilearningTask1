@@ -1,0 +1,10 @@
+New York|8398
+Los Angeles|3990
+Chicago|2706
+Houston|2325
+Phoenix|1660
+Philadelphia|1584
+San Antonio|1532
+San Diego|1425
+Dallas|1345
+San Jose|1030
