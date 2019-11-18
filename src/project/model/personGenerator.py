@@ -39,7 +39,8 @@ class PersonGenerator:
             father_name_list_man = PersonGenerator.__getDataList("resources/" + region + "/name/man/fatherNames.txt")
             first_name_list_woman = PersonGenerator.__getDataList("resources/" + region + "/name/woman/firstNames.txt")
             last_name_list_woman = PersonGenerator.__getDataList("resources/" + region + "/name/woman/lastNames.txt")
-            father_name_list_woman = PersonGenerator.__getDataList("resources/" + region + "/name/woman/fatherNames.txt")
+            father_name_list_woman = PersonGenerator.__getDataList("resources/" + region +
+                                                                   "/name/woman/fatherNames.txt")
 
             name_list = list()
 
@@ -105,7 +106,15 @@ class PersonGenerator:
             if region == "en_US":
                 number_list.append(
                     "+1 " + str(random.randrange(200, 1000)) + " (" + str(random.randrange(200, 1000)) + ") " +
-                    str(random.randrange(10000, 19999))[1::])
+                    str(random.randrange(10000, 20000))[1::])
+            if region == "ru_RU":
+                number_list.append(
+                    "+7 " + " (" + str(random.randrange(901, 1000)) + ") " +
+                    str(random.randrange(1000000, 9999999)))
+            if region == "by_BY":
+                number_list.append(
+                    "+375 " + " (" + random.choice(("29", "25", "33", "44")) + ") " +
+                    str(random.randrange(1000000, 9999999)))
         return number_list
 
     @staticmethod

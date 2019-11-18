@@ -37,9 +37,9 @@ class MistakesGenerator:
     @staticmethod
     def __addSymbol(record, locale):
         symbols = {
-            "en_US": "qwertyuiopasdfghjklzxcvbnm",
-            "ru_RU": "йцукенгшщзхъфывапролджэячсмитьбю",
-            "by_BY": "йцукенгшўзхфывапролджэячсмітьбю",
+            "en_US": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM",
+            "ru_RU": "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ",
+            "by_BY": "йцукенгшўзхфывапролджэячсмітьбюЙЦУКЕНГШЎЗХ'ФЫВАПРОЛДЖЭЯЧСМІТЬБЮ",
             "numbers": "1234567890"
 
         }
